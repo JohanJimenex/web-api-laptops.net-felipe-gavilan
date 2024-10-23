@@ -19,8 +19,7 @@ builder.Services.AddCors(opciones =>
     });
 });
 
-builder.Services.AddDbContext<ApplicationDbContext>(opciones =>
-    opciones.UseSqlServer("name=DefaultConnection"));
+builder.Services.AddDbContext<ApplicationDbContext>(opciones => opciones.UseSqlServer("name=DefaultConnection"));
 
 var app = builder.Build();
 
